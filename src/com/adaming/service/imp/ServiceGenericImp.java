@@ -25,8 +25,8 @@ public class ServiceGenericImp<T> implements ServiceGeneric<T> {
 		daoGeneric.update(o);
 	}
 
-	public void delete(Long id) {
-		daoGeneric.delete(id);
+	public void delete(T o) {
+		daoGeneric.delete(o);
 	}
 
 	public T findOne(Class<T> o, Long id) {

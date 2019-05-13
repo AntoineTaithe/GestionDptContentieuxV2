@@ -25,9 +25,9 @@ SessionFactory sessionFactory;
 		session.update(o);		
 	}
 
-	public void delete(Long id) {
+	public void delete(T o) {
 		Session session=this.sessionFactory.getCurrentSession(); //ouverture connexion, fermeture session etc.. au lieu d'écrire begin. etc..
-		session.delete(id);		
+		session.delete(o);		
 	}
 
 	public T findOne(Class<T> o, Long id) {
