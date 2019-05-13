@@ -7,7 +7,7 @@ public interface ServiceGeneric<T> {
 
 	public void update(T o);
 
-	public void delete(Long id);
+	public void delete(T o);
 
 	public T findOne(Class<T> o, Long id);
 
