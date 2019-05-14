@@ -36,6 +36,10 @@
 		<context:annotation-config></context:annotation-config>
 		<context:component-scan base-package="com.adaming.dao.imp" />
 		<context:component-scan base-package="com.adaming.service.imp" />
+		<context:component-scan base-package="com.adaming.interfaces" />
+		<context:component-scan base-package="com.adaming.service.interfaces" />
+		<context:component-scan base-package="com.adaming.dao.utils" />
+		
 			<!-- Pour permettre d'utiliser l'annotation @Transactional -->
 		<tx:annotation-driven transaction-manager="transactionManager" />
 		
